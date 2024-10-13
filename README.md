@@ -15,15 +15,19 @@ Our topic
    
 ## Contributions:
 
-Nicole - C++ Code using grid graph/prism graph and README <br>
-Teny - Python code using grid graph/book graph <br>
-Arvin - Java code using grid graph/crown graph <br>
+Nicole - Wrote the C++ Code using grid graph/prism graph and README <br>
+Teny - Wrote the Python code using grid graph/book graph <br>
+Arvin - Wrote the Java code using grid graph/crown graph <br>
 
 ## Introduction into Graph Cartesian Product
 
 ## Analysis Framework
 
+We each created our own graph data structure and each graph will use linked lists to represent edges between nodes. We will implement an muiltiplication operation between two input graph using the Graph Cartesian Product.  
+
 ## Results
+
+
 
 ## References
 
