@@ -27,7 +27,7 @@ We each created our own graph data structure and each graph will use linked list
 
 ## Results
 
-
+Each of us decided to implement the Graph Cartesian Product in C++, Pythona and Java. For my part, I focused on writing the c++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. To create the grid graph, 
 
 ## References
 
