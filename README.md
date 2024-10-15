@@ -42,9 +42,14 @@ This is the prism graph output: <br>
 
 ## References
 
-Weisstein, E. W. (n.d.). Graph Cartesian product. Wolfram MathWorld. Retrieved October 14, 2024, from https://mathworld.wolfram.com/GraphCartesianProduct.html <br>
-Stanford University. (n.d.). Graph reference. Stanford Match. Retrieved October 14, 2024, from https://match.stanford.edu/reference/graphs/index.html <br>
-3Blue1Brown. (2018, July 6). Graph theory: A tour of some powerful visualizations [Video]. YouTube. https://www.youtube.com/watch?v=c6LR9B2idQk <br>
 Art of the Problem. (2017, April 18). An introduction to graph theory [Video]. YouTube. https://www.youtube.com/watch?v=UhFfdBdHCJM <br>
-GeeksforGeeks. (n.d.). Java program to represent graphs using linked list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/java-program-to-represent-graphs-using-linked-list/ <br>
-GeeksforGeeks. (n.d.). C++ program to implement adjacency list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/cpp-program-to-implement-adjacency-list/ <br>
+3Blue1Brown. (2018, July 6). Graph theory: A tour of some powerful visualizations [Video]. YouTube. https://www.youtube.com/watch?v=c6LR9B2idQk <br>
+GeeksforGeeks. (2024, July 29). Cartesian product of two sets. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/cartesian-product-two-sets/ <br>
+GeeksforGeeks. (2024, July 1). C++ program to implement adjacency list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/cpp-program-to-implement-adjacency-list/ <br>
+GeeksforGeeks. (2023, April 12). Java program to represent graphs using linked list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/java-program-to-represent-graphs-using-linked-list/ <br>
+Stanford University. (n.d.). Graph reference. Stanford Match. Retrieved October 14, 2024, from https://match.stanford.edu/reference/graphs/index.html <br>
+Weisstein, E. W. (n.d.). Graph Cartesian product. Wolfram MathWorld. Retrieved October 14, 2024, from https://mathworld.wolfram.com/GraphCartesianProduct.html <br>
+
+
+
+
