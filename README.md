@@ -42,6 +42,9 @@ This is the prism graph output: <br>
 
 ## References
 
-“Graph Cartesian Product.” From Wolfram MathWorld, https://mathworld.wolfram.com/GraphCartesianProduct.html Accessed 8 Oct. 2024.
-“Graph Theory#.” Graph Theory, match.stanford.edu/reference/graphs/index.html. Accessed 14 Oct. 2024. 
-YouTube, YouTube, www.youtube.com/watch?v=c6LR9B2idQk. Accessed 14 Oct. 2024. 
+Weisstein, E. W. (n.d.). Graph Cartesian product. Wolfram MathWorld. Retrieved October 14, 2024, from https://mathworld.wolfram.com/GraphCartesianProduct.html <br>
+Stanford University. (n.d.). Graph reference. Stanford Match. Retrieved October 14, 2024, from https://match.stanford.edu/reference/graphs/index.html <br>
+3Blue1Brown. (2018, July 6). Graph theory: A tour of some powerful visualizations [Video]. YouTube. https://www.youtube.com/watch?v=c6LR9B2idQk <br>
+Art of the Problem. (2017, April 18). An introduction to graph theory [Video]. YouTube. https://www.youtube.com/watch?v=UhFfdBdHCJM <br>
+GeeksforGeeks. (n.d.). Java program to represent graphs using linked list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/java-program-to-represent-graphs-using-linked-list/ <br>
+GeeksforGeeks. (n.d.). C++ program to implement adjacency list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/cpp-program-to-implement-adjacency-list/ <br>
