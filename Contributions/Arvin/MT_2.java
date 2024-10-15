@@ -1,10 +1,14 @@
 import java.util.LinkedList;
+import java.util.Arrays;
 
 class Graph{
+
+    //Sets the foundational framwork for building future graphs
+    //This is an overarching adjacency list, to hold future linkedlists
     LinkedList<LinkedList<Integer>>Graph_Shell;
     int V;                           //# of nodes
 
-    Graph(int NodesAmount){         //Constructor
+    Graph(int NodesAmount){         //Constructor method creating new linkedlist to connect nodes with edges
         V = NodesAmount;
         Graph_Shell = new LinkedList<LinkedList<Integer>>();
 
@@ -21,6 +25,7 @@ class Graph{
     }
 
 
+    //For respective graphs, prints non-empty nodes, displays connections between nodes made with edges
     void PrintGraph(int StartAt){
         for (int i = 0; i < V; i++) {
             if (!Graph_Shell.get(i).isEmpty()){
@@ -31,6 +36,20 @@ class Graph{
             }
         }
     }
+
+    //Creates pairs of cartesian products
+    static void Cartesian_Product(int[] GRID, int[] CROWN, int G_length, int C_Length){
+        int count =1;
+        for (int i=0; i<G_length;i++){
+            for (int j=0; j<C_Length;j++){
+                System.out.println("Cartesian Node #" + count+": " +"{" + GRID[i] +", " + CROWN[j]+"} ");
+                count++;
+
+            }
+
+        }
+    } 
+       
 }
 
 public class MT_2{
@@ -61,7 +80,7 @@ public class MT_2{
         //Crown graph(complete bipartite graph w/0 horiz. edges), 2 by 3 nodes (6 nodes total), connected by 6 edges
         //Allocates a designated number of nodes to the graph using AddEdge from the Graph class
         //Connects nodes together with edges
-        Graph crown = new Graph(14); 
+        Graph crown = new Graph(14);  //Actual node count is 6
         crown.AddEdge(8,11);
         crown.AddEdge(8,13);
         crown.AddEdge(10,9);
@@ -73,6 +92,26 @@ public class MT_2{
         System.out.println("Crown Graph:");
         System.out.println("----------------------------------------------------------------------");
         crown.PrintGraph(-8);
+
+
+        //Fills arrays for grid graph and crown graph respectively, preparing them for the cartesian product
+        int []GridVerticeSet = new int[grid.V];
+        for(int i = 0; i<grid.V;i++){
+            GridVerticeSet[i]=i;
+        }
+
+        int []CrownVerticeSet = new int[6];
+        for(int i = 0; i<6;i++){
+            CrownVerticeSet[i]=i+8;
+        }
+
+
+        System.out.println("----------------------------------------------------------------------");
+        System.out.println("Cartesian Product:");
+        System.out.println("----------------------------------------------------------------------");
+
+        //Implements Cartesian Product
+        Graph.Cartesian_Product(GridVerticeSet, CrownVerticeSet, grid.V, 6);
 
     }
 
