@@ -1,6 +1,6 @@
 # Comp 359 Assignment 2
 
-Link to Github Repo: https://github.com/DJNicoco/Comp-359-Assignment-2.git
+Link to Github Repo: https://github.com/DJNicoco/Comp-359_Assignment-2.git
 
 Our topic
 
@@ -27,7 +27,18 @@ We each created our own graph data structure and each graph will use linked list
 
 ## Results
 
-Each of us decided to implement the Graph Cartesian Product in C++, Pythona and Java. For my part, I focused on writing the c++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. To create the grid graph, 
+Each of us decided to implement the Graph Cartesian Product in C++, Python and Java. <br>
+For my part, I focused on writing the C++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. <br>
+To create these graphs, I developed three methods: one for adding a node to the graph, one for adding an edge between two nodes, and one for printing the graph's list of nodes and edges. <br>
+Additionally, I implemented two functions: one that creates a path graph with n nodes, and another that computes the Cartesian product of two graphs. For the prism graph, I developed a function that creates the prism graph based on the base graph.
+
+This is the grid graph output: <br>
+![image](https://github.com/user-attachments/assets/be35dffd-1425-434d-9476-f7b7d86323b7) <br>
+
+This is the prism graph output: <br>
+![image](https://github.com/user-attachments/assets/f56882c0-7db0-49ff-9668-d8b3c970f9ca)
+
+
 
 ## References
 
