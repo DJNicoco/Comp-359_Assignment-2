@@ -1,6 +1,6 @@
 # Comp 359 Assignment 2
 
-Link to Github Repo: https://github.com/DJNicoco/Comp-359-Assignment-2.git
+Link to Github Repo: https://github.com/DJNicoco/Comp-359_Assignment-2.git
 
 Our topic
 
@@ -27,8 +27,24 @@ We each created our own graph data structure and each graph will use linked list
 
 ## Results
 
-Each of us decided to implement the Graph Cartesian Product in C++, Pythona and Java. For my part, I focused on writing the c++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. To create the grid graph, 
+Each of us decided to implement the Graph Cartesian Product in C++, Python and Java. <br>
+For my part, I focused on writing the C++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. <br>
+To create these graphs, I developed three methods: one for adding a node to the graph, one for adding an edge between two nodes, and one for printing the graph's list of nodes and edges. <br>
+Additionally, I implemented two functions: one that creates a path graph with n nodes, and another that computes the Cartesian product of two graphs. For the prism graph, I developed a function that creates the prism graph based on the base graph.
+
+This is the grid graph output: <br>
+![image](https://github.com/user-attachments/assets/be35dffd-1425-434d-9476-f7b7d86323b7) <br>
+
+This is the prism graph output: <br>
+![image](https://github.com/user-attachments/assets/f56882c0-7db0-49ff-9668-d8b3c970f9ca)
+
+
 
 ## References
 
-“Graph Cartesian Product.” From Wolfram MathWorld, https://mathworld.wolfram.com/GraphCartesianProduct.html Accessed 2 Oct. 2024.
+Weisstein, E. W. (n.d.). Graph Cartesian product. Wolfram MathWorld. Retrieved October 14, 2024, from https://mathworld.wolfram.com/GraphCartesianProduct.html <br>
+Stanford University. (n.d.). Graph reference. Stanford Match. Retrieved October 14, 2024, from https://match.stanford.edu/reference/graphs/index.html <br>
+3Blue1Brown. (2018, July 6). Graph theory: A tour of some powerful visualizations [Video]. YouTube. https://www.youtube.com/watch?v=c6LR9B2idQk <br>
+Art of the Problem. (2017, April 18). An introduction to graph theory [Video]. YouTube. https://www.youtube.com/watch?v=UhFfdBdHCJM <br>
+GeeksforGeeks. (n.d.). Java program to represent graphs using linked list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/java-program-to-represent-graphs-using-linked-list/ <br>
+GeeksforGeeks. (n.d.). C++ program to implement adjacency list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/cpp-program-to-implement-adjacency-list/ <br>

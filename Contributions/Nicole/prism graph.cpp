@@ -31,6 +31,7 @@ public:
     }
 };
 
+//Function to create a prism graph based on the base graph
 Graph prismGraph(int baseGraphSize){
   Graph prism;
     
