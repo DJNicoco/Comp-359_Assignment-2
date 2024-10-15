@@ -42,4 +42,6 @@ This is the prism graph output: <br>
 
 ## References
 
-“Graph Cartesian Product.” From Wolfram MathWorld, https://mathworld.wolfram.com/GraphCartesianProduct.html Accessed 2 Oct. 2024.
+“Graph Cartesian Product.” From Wolfram MathWorld, https://mathworld.wolfram.com/GraphCartesianProduct.html Accessed 8 Oct. 2024.
+“Graph Theory#.” Graph Theory, match.stanford.edu/reference/graphs/index.html. Accessed 14 Oct. 2024. 
+YouTube, YouTube, www.youtube.com/watch?v=c6LR9B2idQk. Accessed 14 Oct. 2024. 
