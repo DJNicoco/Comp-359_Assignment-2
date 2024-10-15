@@ -61,5 +61,5 @@ P_m = path_graph(m)
 P_n = path_graph(n)
 grid_graph = P_m.cartestian_product(P_n)
 visualize(grid_graph)
-#Define two path graphs
-#Define a path graph
+#Define two path graphs with parameter 4 and 5 respectiely
+#generate a grid graph
