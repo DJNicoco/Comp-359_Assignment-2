@@ -14,64 +14,65 @@ class Graph{
     }
 
 
+    //This function defines an edge connecting two nodes
     void AddEdge(int v, int u){
         Graph_Shell.get(v).add(u);
         Graph_Shell.get(u).add(v);
     }
 
 
-    void PrintGraph(){
+    void PrintGraph(int StartAt){
         for (int i = 0; i < V; i++) {
-            System.out.println("Node " +i+":" );
-            for (int x: Graph_Shell.get(i))System.out.println(">Node # connected: " +x);
-            System.out.println();
+            if (!Graph_Shell.get(i).isEmpty()){
+                System.out.println("Node " +(i+StartAt)+":" );
+                for (int x: Graph_Shell.get(i))System.out.println(">Nodes connected: " +x);
+                System.out.println(" ");
+
+            }
         }
     }
 }
-
-/*
-class Node{
-
-}
-*/
 
 public class MT_2{
 
     public static void main (String[] args){
 
-        Graph grid = new Graph(9);   
-        grid.AddEdge(0,3);
+        //Grid graph, 3 by 3 nodes (9 nodes total), connected by 12 edges
+        //Allocates a designated number of nodes to the graph using AddEdge from the Graph class
+        //Connects nodes together with edges
+        Graph grid = new Graph(8);  
         grid.AddEdge(0,1);
-        grid.AddEdge(1,2);
-        grid.AddEdge(1,4);
-        grid.AddEdge(2,5);
-        grid.AddEdge(3,4);
-        grid.AddEdge(3,6);
-        grid.AddEdge(4,7);
-        grid.AddEdge(5,8);
-        grid.AddEdge(6,7);
-        grid.AddEdge(7,8);
+        grid.AddEdge(0,2);
+        grid.AddEdge(1,3);
+        grid.AddEdge(2,3);
+        grid.AddEdge(2,4);
+        grid.AddEdge(3,5);
         grid.AddEdge(4,5);
+        grid.AddEdge(4,6);
+        grid.AddEdge(5,7);
+        grid.AddEdge(6,7);
+        
 
         System.out.println("----------------------------------------------------------------------");
         System.out.println("Grid Graph:");
         System.out.println("----------------------------------------------------------------------");
-        grid.PrintGraph();
+        grid.PrintGraph(0);
 
-
-
-        Graph crown = new Graph(6); 
-        crown.AddEdge(0,4);
-        crown.AddEdge(0,5);
-        crown.AddEdge(1,3);
-        crown.AddEdge(1,5);
-        crown.AddEdge(2,3);
-        crown.AddEdge(2,4);
+        //Crown graph(complete bipartite graph w/0 horiz. edges), 2 by 3 nodes (6 nodes total), connected by 6 edges
+        //Allocates a designated number of nodes to the graph using AddEdge from the Graph class
+        //Connects nodes together with edges
+        Graph crown = new Graph(14); 
+        crown.AddEdge(8,11);
+        crown.AddEdge(8,13);
+        crown.AddEdge(10,9);
+        crown.AddEdge(10,13);
+        crown.AddEdge(12,9);
+        crown.AddEdge(12,11);
 
         System.out.println("----------------------------------------------------------------------");
         System.out.println("Crown Graph:");
         System.out.println("----------------------------------------------------------------------");
-        crown.PrintGraph();
+        crown.PrintGraph(-8);
 
     }
 
