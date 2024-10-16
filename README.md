@@ -21,7 +21,9 @@ Arvin - Wrote the Java code using grid graph/crown graph <br>
 
 ## Introduction into Graph Cartesian Product
 
-The Cartesian product of two graphs G and H was implemented creating a new graph where each vertex in the product graph represents the nodes 
+The Cartesian product of two graphs 𝐺 and H creates a new graph where each vertex in the product graph represents a pair of nodes: one from graph G and one from graph H.<br>
+The edges in the product graph are determined when the edges comes from graph G, where the nodes from graph H stays the same and the nodes from graph G changes. And when the edges come from graph H, the nodes from graph G stays the same and the nodes from graph H changes. <br>
+The product graph preserves the structure of both graphs, G and H, just in different parts of the graph. <br>
 
 ## Analysis Framework
 
