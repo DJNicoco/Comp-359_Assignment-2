@@ -21,7 +21,7 @@ Arvin - Wrote the Java code using grid graph/crown graph <br>
 
 ## Introduction into Graph Cartesian Product
 
-The Cartesian product of two graph G1 and G2 was inplemeneted creating a new graph where each vertex in the roduct graph represents the 
+The Cartesian product of two graphs G and H was implemented creating a new graph where each vertex in the product graph represents the nodes 
 
 ## Analysis Framework
 
@@ -29,7 +29,7 @@ In this assignment, we each focused on implementing the Graph Cartesian Product 
 
 Teny implemented two types of graph structures in Python using the Graph Cartesian Product. First, he created a Gridgraph class to represent the grid graph, where each node is connected to its neighboring nodes. The Cartesian Product function combined two path graphs to form this grid graph, and the results were visualized using the Matplotlib library. Teny also developed a Bookgraph class, starting with a star graph that has a central node connected to other nodes. The Cartesian Product of the star graph is then combined with a path graph to create a book graph.
 
-Arvin implemented two types of graphs in Java using the Graph Cartesian Product. First, he created a Graph class, which sets the framework for building future graphs, and developed methods for creating a new linked list to connect the nodes with edges. Arvin created the grid graph using 3 by 3 nodes connected by 12 edges and developed the crown graph, which consists of 2 by 3 nodes connected by 6 edges. To prepare for the Cartesian Product, he filled arrays for the two graphs and then implemented the Cartesian Product function.
+Arvin implemented two types of graphs in Java using the Graph Cartesian Product. First, he created a Graph class, which sets the framework for building future graphs, and developed methods for creating a new linked list to connect the nodes with edges. Arvin created the grid graph using 3 by 3 nodes connected by 12 edges and developed the crown graph, which consists of 2 by 3 nodes connected by 6 edges. To prepare for the Cartesian Product, he filled Linkedlists for the two graphs and then implemented the Cartesian Product function. The Cartesian product is being carried out between the grid graph and the crown graph.
 
 ## Results
 
