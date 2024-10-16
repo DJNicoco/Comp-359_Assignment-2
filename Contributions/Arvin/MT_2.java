@@ -38,11 +38,14 @@ class Graph{
     }
 
     //Creates pairs of cartesian products
-    static void Cartesian_Product(int[] GRID, int[] CROWN, int G_length, int C_Length){
+    static void Cartesian_Product(LinkedList<Integer>GRID, LinkedList<Integer>CROWN){
         int count =1;
-        for (int i=0; i<G_length;i++){
-            for (int j=0; j<C_Length;j++){
-                System.out.println("Cartesian Node #" + count+": " +"{" + GRID[i] +", " + CROWN[j]+"} ");
+        for (int i=0; i<GRID.size();i++){
+            int Grid_Node = GRID.get(i);
+
+            for (int j=0; j<CROWN.size();j++){
+                int Crown_Node = CROWN.get(j);
+                System.out.println("Cartesian Node #" + count+": " +"{" + Grid_Node +", " + Crown_Node+"} ");
                 count++;
 
             }
@@ -95,14 +98,14 @@ public class MT_2{
 
 
         //Fills arrays for grid graph and crown graph respectively, preparing them for the cartesian product
-        int []GridVerticeSet = new int[grid.V];
+        LinkedList<Integer>GridVerticeSet = new LinkedList<>();
         for(int i = 0; i<grid.V;i++){
-            GridVerticeSet[i]=i;
+            GridVerticeSet.add(i);
         }
 
-        int []CrownVerticeSet = new int[6];
+        LinkedList<Integer>CrownVerticeSet = new LinkedList<>();
         for(int i = 0; i<6;i++){
-            CrownVerticeSet[i]=i+8;
+            CrownVerticeSet.add(i+8);
         }
 
 
@@ -111,7 +114,7 @@ public class MT_2{
         System.out.println("----------------------------------------------------------------------");
 
         //Implements Cartesian Product
-        Graph.Cartesian_Product(GridVerticeSet, CrownVerticeSet, grid.V, 6);
+        Graph.Cartesian_Product(GridVerticeSet, CrownVerticeSet);
 
     }
 
