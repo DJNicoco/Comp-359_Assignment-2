@@ -15,15 +15,15 @@ Our topic
    
 ## Contributions:
 
-Nicole - Wrote the C++ Code using grid graph/prism graph and README <br>
-Teny - Wrote the Python code using grid graph/book graph <br>
-Arvin - Wrote the Java code using grid graph/crown graph <br>
+Nicole - Wrote the C++ code using a grid graph/prism graph and README <br>
+Teny - Wrote the Python code using a grid graph/book graph <br>
+Arvin - Wrote the Java code using a grid graph/crown graph <br>
 
 ## Introduction into Graph Cartesian Product
 
 The Cartesian product of two graphs 𝐺 and H creates a new graph where each vertex in the product graph represents a pair of nodes: one from graph G and one from graph H.<br>
-The edges in the product graph are determined when the edges comes from graph G, where the nodes from graph H stays the same and the nodes from graph G changes. And when the edges come from graph H, the nodes from graph G stays the same and the nodes from graph H changes. <br>
-The product graph preserves the structure of both graphs, G and H, just in different parts of the graph. <br>
+The edges in the product graph are determined when the edges come from graph G, where the nodes from graph H stay the same and the nodes from graph G change. And when the edges come from graph H, the nodes from graph G stay the same and the nodes from graph H change. <br>
+The product graph preserves the structure of both graphs, G and H, but in different parts of the graph. <br>
 
 ## Analysis Framework
 
@@ -35,15 +35,15 @@ Arvin implemented two types of graphs in Java using the Graph Cartesian Product.
 
 ## Results
 
-For my part, I focused on writing the C++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. The grid graph was the most coomon structure with our implementations and I picked a unique second graph called a prism graph. <br>
+For my part, I focused on implementing the C++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. The grid graph was the most common structure with our implementations and I picked a unique second graph called a prism graph. <br>
 To create these graphs, I developed three methods: one for adding a node to the graph, one for adding an edge between two nodes, and one for printing the graph's list of nodes and edges. <br>
 
-Additionally, I implemented two functions: one that creates a path graph with n nodes, and another that computes the Cartesian product of two graphs. For the prism graph, I developed a function that creates the prism graph based on an input base graph, combining two parallel paths and connecting their corresponding nodes to form the prism.
+Additionally, I implemented two functions: one to create a path graph with n nodes, and another that computes the Cartesian product of two graphs. For the prism graph, I developed a function that creates the prism graph based on an input base graph, combining two parallel paths and connecting their corresponding nodes to form the prism.
 
-This is the grid graph output: <br>
+Below is the grid graph output: <br>
 ![image](https://github.com/user-attachments/assets/be35dffd-1425-434d-9476-f7b7d86323b7) <br>
 
-This is the prism graph output: <br>
+Below is the prism graph output: <br>
 ![image](https://github.com/user-attachments/assets/f56882c0-7db0-49ff-9668-d8b3c970f9ca)
 
 ## References
