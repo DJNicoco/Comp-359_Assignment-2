@@ -31,6 +31,43 @@ public:
     }
 };
 
+//Function to create the cartesian product of two graphs
+Graph cartesianProduct(const Graph &graph1, const Graph &graph2){
+    Graph productGraph;
+
+    int rows1 = graph1.adjList.size(); //number of nodes in the first graph
+    int rows2 = graph2.adjList.size(); //number of nodes in the second graph
+
+    //This creates nodes for the product
+    for (int i = 0; i < rows1; i++){
+        for (int j = 0; j < rows2; j++){
+            productGraph.addNode();
+        }
+    }
+    //This adds edges for the product
+    for (int i = 0; i < rows1; i++){
+        for (int j = 0; j < rows2; j++) {
+            int currentNode = i * rows2 + j;
+
+            //Connects to right neighbor in the same row
+            if (j < rows2 - 1){
+                int rightNeighbor = i * rows2 + (j + 1);
+                productGraph.addEdge(currentNode, rightNeighbor);
+            }
+            //Connects to the neighbor below in the same column
+            if (i < rows1 - 1){
+                int bottomNeighbor = (i + 1) * rows2 + j;
+                productGraph.addEdge(currentNode, bottomNeighbor);
+            } 
+            //This then connects to neighbors from the second graph
+            for(const auto &neighbor : graph2.adjList[j]){
+                productGraph.addEdge(currentNode, i * rows2 + neighbor);
+            }
+        }
+    }
+    return productGraph; //Returns the product graph
+}
+
 //Function to create a prism graph based on the base graph
 Graph prismGraph(int baseGraphSize){
   Graph prism;
