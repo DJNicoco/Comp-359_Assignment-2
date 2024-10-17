@@ -53,7 +53,6 @@ GeeksforGeeks. (2024, July 29). Cartesian product of two sets. GeeksforGeeks. Re
 GeeksforGeeks. (2024, July 1). C++ program to implement adjacency list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/cpp-program-to-implement-adjacency-list/ <br>
 GeeksforGeeks. (2023, April 12). Java program to represent graphs using linked list. GeeksforGeeks. Retrieved October 14, 2024, from https://www.geeksforgeeks.org/java-program-to-represent-graphs-using-linked-list/ <br>
 Sine, V. (2020, September 22). What is the Cartesian Product of Graphs? (Discrete Math) +3 examples! [Video]. YouTube. https://www.youtube.com/watch?v=c6LR9B2idQk <br>
-Stanford University. (n.d.). Graph reference. Stanford Match. Retrieved October 14, 2024, from https://match.stanford.edu/reference/graphs/index.html <br>
 Weisstein, E. W. (n.d.). Graph Cartesian product. Wolfram MathWorld. Retrieved October 14, 2024, from https://mathworld.wolfram.com/GraphCartesianProduct.html <br>
 
 
