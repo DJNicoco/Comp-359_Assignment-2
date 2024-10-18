@@ -31,6 +31,36 @@ public:
     }
 };
 
+//Function to create a cycle graph with m nodes
+Graph cycleGraph (int m){
+    Graph cycle;
+
+    //This adds nodes to the cycle graph
+    for (int i = 0; i < m; i++){
+        cycle.addNode();
+    }
+    //Connects each node to the next one and the last node to the first node
+    for (int i = 0; i < m; i++){
+        cycle.addEdge(i, (i + 1) % m);
+    }
+    return cycle;
+}
+
+//Function to create a path graph with n nodes
+Graph pathGraph(int n){
+    Graph path; //The path graph for prism graph is using 2 nodes
+    
+    //This adds nodes to the path graph
+    for (int i = 0; i < n; i++){
+        path.addNode();
+    }
+    //Connects nodes in the path graph, these nodes are connected by egdes
+    for (int i = 0; i < n - 1; i++){
+        path.addEdge(i, i + 1);
+    }
+    return path;
+}
+
 //Function to create the cartesian product of two graphs
 Graph cartesianProduct(const Graph &graph1, const Graph &graph2){
     Graph productGraph;
@@ -68,38 +98,19 @@ Graph cartesianProduct(const Graph &graph1, const Graph &graph2){
     return productGraph; //Returns the product graph
 }
 
-//Function to create a prism graph based on the base graph
-Graph prismGraph(int baseGraphSize){
-  Graph prism;
-    
-    //Create base graph (path graph)
-    for (int i = 0; i < baseGraphSize; ++i) {
-        prism.addNode(); //Add nodes for the base
-    }
-    //Create upper graph by adding nodes
-    for (int i = 0; i < baseGraphSize; ++i) {
-        prism.addNode(); //Add nodes for the upper base
-    }
-    //Add edges for the base graph 
-    for (int i = 0; i < baseGraphSize; ++i) {
-        prism.addEdge(i, (i + 1) % baseGraphSize); // Connect base nodes in a cycle
-    }
-    //Add edges for the upper graph 
-    for (int i = baseGraphSize; i < 2 * baseGraphSize; ++i) {
-        prism.addEdge(i, ((i + 1) % baseGraphSize) + baseGraphSize); // Connect upper nodes in a cycle
-    }
-    //Add edges between the base and upper graph
-    for (int i = 0; i < baseGraphSize; ++i) {
-        prism.addEdge(i, i + baseGraphSize); // Connect base nodes to the corresponding upper nodes
-    }
-    return prism; // Return the resulting prism graph
+//Function to create a prism graph; the prism graph product is C_m * P_2
+Graph prismGraph(int m){
+    Graph C_m = cycleGraph(m); //This creates the cycle graph, C_m
+    Graph P_2 = pathGraph(2); //This creates the path graph with 2 nodes, P_2
+
+    return cartesianProduct(C_m, P_2); //This uses the cartesian product to create the prism graph
 }
 
 int main() {
-    int baseGraphSize = 6; // Size of the base graph for the prism
+    int m = 6; //Number of nodes in the cycle graph C_m
 
-    //Create a prism graph based on the base graph size
-    Graph prism = prismGraph(baseGraphSize);
+    //Create a prism graph 
+    Graph prism = prismGraph(m);
 
     //Print the resulting prism graph
     prism.printGraph();
