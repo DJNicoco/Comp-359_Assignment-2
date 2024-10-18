@@ -36,9 +36,10 @@ Arvin implemented two types of graphs in Java using the Graph Cartesian Product.
 ## Results
 
 For my part, I focused on implementing the C++ code. In my implementation, I created two types of graphs: the grid graph and the prism graph. The grid graph was the most common structure with our implementations and I picked a unique second graph called a prism graph. <br>
-To create these graphs, I developed three methods: one for adding a node to the graph, one for adding an edge between two nodes, and one for printing the graph's list of nodes and edges. <br>
 
-Additionally, I implemented two functions: one to create a path graph with n nodes, and another that computes the Cartesian product of two graphs. For the prism graph, I developed a function that creates the prism graph based on an input base graph, combining two parallel paths and connecting their corresponding nodes to form the prism.
+For both the grid graph and prism graph, I developed three methods for building my own graph structure: one for adding a node to the graph, one for adding an edge between two nodes, and one for printing the graph's list of nodes and edges. Additionally, in the grid graph, I implemented two functions: one to create a path graph with n nodes, and another that computes the Cartesian product of two graphs. <br>
+
+For the prism graph, I used the same three methods from the grid graph to create my graph and also implemented the same Cartesian Product function and path graph function. In addition, I implemented a cycle graph function based on the information provided in the table at https://mathworld.wolfram.com/GraphCartesianProduct.html, which corresponds to the prism graph.
 
 Below is the grid graph output: <br>
 ![image](https://github.com/user-attachments/assets/be35dffd-1425-434d-9476-f7b7d86323b7) <br>
